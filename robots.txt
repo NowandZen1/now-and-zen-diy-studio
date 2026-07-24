@@ -1,0 +1,8 @@
+# Now and Zen DIY Studio
+# NOTE: while on the staging preview subdomain, every page also carries a
+# noindex meta tag, so nothing here gets indexed yet. At go-live on the real
+# domain, remove the page-level noindex tags and this file allows full crawl.
+User-agent: *
+Allow: /
+
+Sitemap: https://nowandzendiy.com/sitemap.xml
