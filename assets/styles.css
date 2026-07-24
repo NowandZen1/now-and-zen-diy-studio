@@ -264,6 +264,17 @@ section.section-tight{padding:64px 0;}
    already landscape/square and unaffected by cover. */
 #diy-kits-band .feature-photo{background:var(--ivory);}
 #diy-kits-band .feature-photo img{object-fit:contain;}
+
+/* Owner flagged the Succulent Pumpkin card as cropped (2026-07-24 screenshot). The earlier
+   2026-07-24 investigation of this same file checked raw pixel dimensions (1400x1050, a mathematical
+   4:3 match with the .strip-photo box) and found no bug -- that check missed the file's own EXIF
+   orientation tag (6, rotate 90), which is what browsers actually render: the true displayed image
+   is portrait 1050x1400, not landscape. Checked all 7 photos in this row the same way (exif-corrected
+   dimensions, not raw): every one is portrait or square (0.75:1 to 1:1), so all of them were being
+   cropped by the shared 4:3 .strip-photo cover box, not just the pumpkin. Same scoped contain+ivory
+   fix as the DIY Kits band above. */
+#workshops-teaser .strip-photo{background:var(--ivory);}
+#workshops-teaser .strip-photo img{object-fit:contain;}
 .feature-body{padding:22px 22px 26px;}
 .feature-body h3{font-size:1.2rem; text-transform:none; margin-bottom:8px;}
 .feature-body p{font-size:0.94rem; opacity:0.84; margin:0;}
