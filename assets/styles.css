@@ -257,6 +257,13 @@ section.section-tight{padding:64px 0;}
 .feature-card:hover{transform:translateY(-6px); box-shadow:8px 10px 0 var(--olive);}
 .feature-photo{aspect-ratio:4/3; overflow:hidden;}
 .feature-photo img{width:100%; height:100%; object-fit:cover; filter:var(--photo-bright);}
+/* Per owner pptx 2026-07-24 (slide 4, "Resize pictures to fit full terrarium"): all 6 DIY Kits
+   product photos are portrait/square (0.62:1 to 1:1), so object-fit:cover on the shared 4:3
+   .feature-photo box was cropping the terrariums, worst on kids-dino-diy.jpg (0.62:1) and
+   burgandy-bliss.jpg (0.67:1). Scoped to this band only — the More-than-a-Build row's photos are
+   already landscape/square and unaffected by cover. */
+#diy-kits-band .feature-photo{background:var(--ivory);}
+#diy-kits-band .feature-photo img{object-fit:contain;}
 .feature-body{padding:22px 22px 26px;}
 .feature-body h3{font-size:1.2rem; text-transform:none; margin-bottom:8px;}
 .feature-body p{font-size:0.94rem; opacity:0.84; margin:0;}
