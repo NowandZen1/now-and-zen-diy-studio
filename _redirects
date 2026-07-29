@@ -1,0 +1,11 @@
+# Old Square store URLs -> the store's new home on booking.shopnowandzen.com
+# These paths lived on shopnowandzen.com until the 2026-07-28 cutover, so bookmarks,
+# Google's index, and printed/social links still point at them. Square cannot redirect
+# across domains, so the new host has to own these. 301 = permanent, passes SEO value.
+/product/*      https://booking.shopnowandzen.com/product/:splat    301!
+/s/*            https://booking.shopnowandzen.com/s/:splat          301!
+/open-workshop  https://booking.shopnowandzen.com/open-workshop     301!
+/contact-us     https://booking.shopnowandzen.com/contact-us        301!
+/private        https://booking.shopnowandzen.com/private           301!
+/diy-kits       https://booking.shopnowandzen.com/diy-kits          301!
+/plant-care     https://booking.shopnowandzen.com/plant-care        301!
