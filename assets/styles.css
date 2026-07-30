@@ -534,7 +534,6 @@ section.section-tight{padding:64px 0;}
 .footer-col a{padding:8px 0; margin-bottom:2px; min-height:44px; box-sizing:border-box;}
 .footer-col a:hover{opacity:1; text-decoration:underline;}
 .footer-bottom{display:flex; justify-content:space-between; align-items:center; padding-top:24px; flex-wrap:wrap; gap:12px; font-size:0.78rem; opacity:0.55;}
-.footer-note{font-size:0.72rem; opacity:0.6; max-width:60ch;}
 
 /* Location block (owner notes 2026-07-21, slide 14): map + hours + contact, replaces the Visit page */
 .footer-locate{display:grid; grid-template-columns:1.1fr 1fr; gap:40px; align-items:start; padding-bottom:44px; margin-bottom:40px; border-bottom:1px solid var(--line);}
