@@ -9,3 +9,17 @@
 /private        https://booking.shopnowandzen.com/private           301!
 /diy-kits       https://booking.shopnowandzen.com/diy-kits          301!
 /plant-care     https://booking.shopnowandzen.com/plant-care        301!
+
+# PAUSED 11 Nov 2026: the shop is now mobile. Every page goes to the Square store.
+# To bring the website back, delete from this line to the bottom.
+/workshops                    https://booking.shopnowandzen.com/open-workshop  302!
+/workshops.html               https://booking.shopnowandzen.com/open-workshop  302!
+/diy-kits.html                https://booking.shopnowandzen.com/diy-kits       302!
+/shop                         https://booking.shopnowandzen.com/s/shop         302!
+/shop.html                    https://booking.shopnowandzen.com/s/shop         302!
+/gift-cards                   https://booking.shopnowandzen.com/s/gift-cards   302!
+/gift-cards.html              https://booking.shopnowandzen.com/s/gift-cards   302!
+/private-events               https://booking.shopnowandzen.com/private        302!
+/private-events.html          https://booking.shopnowandzen.com/private        302!
+/plant-care.html              https://booking.shopnowandzen.com/plant-care     302!
+/*                            https://booking.shopnowandzen.com/               302!
